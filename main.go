@@ -1,5 +1,7 @@
 package main
 
+import "learning-go/src"
+
 func main() {
-	cmdArgs()
+	src.ParseArgs()
 }
