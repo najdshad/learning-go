@@ -7,6 +7,8 @@ vet: fmt
 build: vet
 	go build
 bin: build
-	mv ./go-tut bin/go-tut
+	[ -d ./bin ] || mkdir -p ./bin && mv ./learning-go bin/learning-go
 clean:
 	rm -rf ./bin/*
+run:
+	./bin/learning-go

@@ -8,6 +8,7 @@ import (
 )
 
 // working with os.Args
+// will not work with make run
 func cmdArgs() {
 	fArgs := make([]float64, 0, 2)
 	for _, arg := range os.Args[1:3] {
