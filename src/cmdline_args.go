@@ -1,3 +1,4 @@
+// Package src: exercises devided into different files
 package src
 
 import (
@@ -7,8 +8,7 @@ import (
 	"strconv"
 )
 
-// working with os.Args
-// will not work with make run
+// ParseArgs : working with os.Args | will not work with !make run
 func ParseArgs() {
 	fArgs := make([]float64, 0, 2)
 	for _, arg := range os.Args[1:3] {
